@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Test</title>
+</head>
+<body>
+	<form>
+		<label for="answer">Svar:</label>
+		<input type="text" id="answer" name="answer">
+		<button type="submit">Submit</button>
+	</form>
+	<script>
+		const form = document.querySelector('form');
+		form.addEventListener('submit', (event) => {
+			event.preventDefault();
+			const answerInput = document.getElementById('answer');
+			if (answerInput.value === '80') {
+				alert('En ledtråd göms vid Flodas äldsta Ek, nära en plats där unga försöker sin kickflipstek.');
+			}
+		});
+	</script>
+</body>
+</html>
